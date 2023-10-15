@@ -3,6 +3,7 @@ const chatMessages = document.querySelector('.chat-messages')
 const socket = io()
 const roomName = document.getElementById('room-name')
 const userList = document.getElementById('users')
+const currentUser = document.getElementById('identify-user')
 
 // Get username and room from URL
 const { username, room } = Qs.parse(location.search, {
@@ -16,6 +17,7 @@ socket.emit("joinRoom", { username, room });
 socket.on('roomUsers', ({ room, users }) => {
     outputRoomName(room);
     outputUsers(users);
+    displayIndividualUser(username);
 });
 
 // Message from server
@@ -77,4 +79,8 @@ function outputUsers(users) {
         li.innerText = user.username;
         userList.appendChild(li);
     });
+}
+
+function displayIndividualUser(user) {
+    currentUser.innerHTML = "Hello " + user;
 }
