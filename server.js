@@ -42,7 +42,7 @@ io.on("connection", socket => {
 
     // User disconnected
     socket.on("disconnet", () => {
-        const user = userLeave(socket.id);
+        const user = userLeave(socket.id); // ISSUE IN THIS METHOD
         io.to(user.room).emit("message", formatMessage("ChatBot", `${user.username} has left the chat`))
     })
 
@@ -59,6 +59,6 @@ io.on("connection", socket => {
     // io.emit(); // Send message to all the connected users
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
