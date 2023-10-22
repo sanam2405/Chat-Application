@@ -33,3 +33,9 @@ A real-time chat application where multiple users across different devices can j
 2. URI can be manipulated (FIXED)
 3. Same room having multiple users with same name cannot exist => ambiguity (FIXED)
 4. User cannot identify itself (FIXED PARTIALLY)
+
+## TO-DO
+
+1. Enable media sharing
+2. Integrate a database
+3. Sign-up, Sign-in and Authentication 
