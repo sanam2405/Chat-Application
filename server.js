@@ -41,9 +41,17 @@ io.on("connection", socket => {
 
 
     // User disconnected
-    socket.on("disconnet", () => {
+    socket.on("disconnect", () => {
         const user = userLeave(socket.id);
-        io.to(user.room).emit("message", formatMessage("ChatBot", `${user.username} has left the chat`))
+        if (user) {
+            io.to(user.room).emit("message", formatMessage("ChatBot", `${user.username} has left the chat`));
+
+            // Send the updated users and room info
+            io.to(user.room).emit("roomUsers", {
+                room: user.room,
+                users: getRoomUsers(user.room),
+            });
+        }
     })
 
     // Listen for chat message

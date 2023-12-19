@@ -25,3 +25,17 @@ A real-time chat application where multiple users across different devices can j
 
 - Bidirectional connection between server and client has been established by Socket.IO.
 - Rooms have been made so that different groups can communicate together.
+
+
+## Issues
+
+1. Client on leaving malfunctions (FIXED)
+2. URI can be manipulated (FIXED)
+3. Same room having multiple users with same name cannot exist => ambiguity (FIXED)
+4. User cannot identify itself (FIXED PARTIALLY)
+
+## TO-DO
+
+1. Enable media sharing
+2. Integrate a database
+3. Sign-up, Sign-in and Authentication 
