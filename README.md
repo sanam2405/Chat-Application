@@ -1,4 +1,5 @@
 # Chat-Application
+
 A real-time chat application where multiple users across different devices can join and chat with each other. HTML, CSS, and JavaScript have been used for the front-end, and Express.js for the back-end. The communication establishment has been done using Socket.IO.
 
 ## Steps to use it
@@ -6,11 +7,13 @@ A real-time chat application where multiple users across different devices can j
 1. Clone or download the repository to your local machine.
 
 2. Install the required npm version and update the local node_modules repository with the versions present in package.json:
+
    ```
-   nodemon install
+   npm install
    ```
 
 3. Run the `server.js` to view the website:
+
    ```
    nodemon server.js
    ```
@@ -26,7 +29,6 @@ A real-time chat application where multiple users across different devices can j
 - Bidirectional connection between server and client has been established by Socket.IO.
 - Rooms have been made so that different groups can communicate together.
 
-
 ## Issues
 
 1. Client on leaving malfunctions (FIXED)
@@ -38,4 +40,4 @@ A real-time chat application where multiple users across different devices can j
 
 1. Enable media sharing
 2. Integrate a database
-3. Sign-up, Sign-in and Authentication 
+3. Sign-up, Sign-in and Authentication
