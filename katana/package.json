@@ -1,0 +1,19 @@
+{
+  "name": "katana",
+  "version": "1.0.0",
+  "description": "haiku backend for chat service",
+  "main": "index.js",
+  "repository": "https://github.com/sanam2405/haiku.git",
+  "author": "Manas Pratim Biswas",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
