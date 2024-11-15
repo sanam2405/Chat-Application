@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "haiku-analytics"
+name = "haiku-katana"
 version = "0.1.0"
 description = "haiku chat analytics backend"
 authors = ["Manas Pratim Biswas <manaspb2405@gmail.com>"]

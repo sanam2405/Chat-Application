@@ -1,5 +1,5 @@
 {
-  "name": "katana",
+  "name": "haiku-api",
   "version": "1.0.0",
   "description": "haiku backend for chat service",
   "main": "index.js",

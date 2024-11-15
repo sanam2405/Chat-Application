@@ -1,18 +1,4 @@
-.idea
-.ipynb_checkpoints
-.vscode
-__pycache__
-.pytest_cache
-.netlify
-test.db
-log.txt
-Pipfile.lock
-env3.*
-.env
-
-# chat files
-*.pdf
-*.txt
-
-# macOS
+node_modules
+dist
 .DS_Store
+.env
