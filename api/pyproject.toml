@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "haiku-analytics"
+version = "0.1.0"
+description = "haiku chat analytics backend"
+authors = ["Manas Pratim Biswas <manaspb2405@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = {extras = ["standard"], version = "^0.115.5"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
